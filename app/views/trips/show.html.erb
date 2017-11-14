@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Confirmationnumber:</strong>
+  <%= @trip.confirmationnumber %>
+</p>
+
+<p>
+  <strong>Starttime:</strong>
+  <%= @trip.starttime %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @trip.startdate %>
+</p>
+
+<p>
+  <strong>Endtime:</strong>
+  <%= @trip.endtime %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @trip.enddate %>
+</p>
+
+<p>
+  <strong>Seatnumber:</strong>
+  <%= @trip.seatnumber %>
+</p>
+
+<p>
+  <strong>Carrier:</strong>
+  <%= @trip.carrier %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @trip.type %>
+</p>
+
+<%= link_to 'Edit', edit_trip_path(@trip) %> |
+<%= link_to 'Back', trips_path %>

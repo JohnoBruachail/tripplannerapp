@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  confirmationnumber: MyString
+  starttime: MyString
+  startdate: MyString
+  endtime: MyString
+  enddate: MyString
+  seatnumber: MyString
+  carrier: MyString
+  type: 
+
+two:
+  confirmationnumber: MyString
+  starttime: MyString
+  startdate: MyString
+  endtime: MyString
+  enddate: MyString
+  seatnumber: MyString
+  carrier: MyString
+  type: 
