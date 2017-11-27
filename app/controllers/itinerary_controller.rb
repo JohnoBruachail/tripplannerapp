@@ -20,10 +20,10 @@ class ItineraryController < ApplicationController
   def create
     @user = User.find(params[:user_id])
     
-    @itinerary = @user.itinerary.build(params.require(:itinerary).permit(:details))
-    if @review.save
+    @itinerary = @user.itinerary.build(params.require(:itinerary).permit(:user_id))
+    if @itinerary.save
     # Save the review successfully
-    redirect_to movie_review_url(@movie, @review)
+    redirect_to movie_review_url(@user, @itinerary)
     else
     render :action => "new"
     end

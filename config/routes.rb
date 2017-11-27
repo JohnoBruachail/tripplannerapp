@@ -22,6 +22,12 @@ Rails.application.routes.draw do
   get 'itinerary/new'
 
   get 'itinerary/edit'
+  
+  get 'test'  => 'emailprocessor#test'
+  
+  post 'initialize' => 'emailprocessor#initialize'
+  
+  post 'process' => 'emailprocessor#process'
 
   resources :users do
     resources :itinerary do
